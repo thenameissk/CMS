@@ -1,0 +1,65 @@
+// 
+// pagination.scss
+//
+
+
+// Pagination rounded (Custom)
+.paginate_button {
+    border-radius: 30px !important;
+    margin: 0 10px;
+    border: none;
+  }
+
+  .paginate_button.next{
+    margin: 0 0px !important;
+  }
+
+#datatableID_paginate{
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  justify-content: flex-end !important;
+}
+
+.paginate_button{
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #323a46;
+  background-color: #fff;
+}
+
+.paginate_button:hover {
+  z-index: 2;
+  color: #323a46;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.paginate_button.current {
+  z-index: 3;
+  color: #fff;
+  background-color: #6658dd;
+  border-color: #6658dd;
+}
+
+.paginate_button.first, .paginate_button.last{
+  display: none;
+}
+
+#datatableID_paginate span{
+  display: flex;
+}
+
+.dataTables_info{
+  display: inline-flex;
+}
+
+.dataTables_paginate{
+  display: inline-flex;
+  float: right;
+}

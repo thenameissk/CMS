@@ -1,0 +1,276 @@
+<!-- ========== Left Sidebar Start ========== -->
+<ng-template #contentTemplate>
+    <!--- Sidemenu -->
+    <div id="sidebar-menu">
+        <ul class="metismenu" id="side-menu" #sideMenu>
+
+            <li class="menu-title">Navigation</li>
+
+            <li>
+                <a routerLink="/dashboard/dashboard" class="waves-effect">
+                    <i class="fe-airplay"></i>
+                    <span> Dashboard </span>
+                </a>
+            </li>
+
+            <li class="menu-title mt-2">CMS</li>
+
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-book"></i>
+                    <span> Pages </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/pages" routerLinkActive="active" class="side-nav-link-ref">Pages</a>
+                    </li>
+                    <li>
+                        <a routerLink="/pages/add" routerLinkActive="active" class="side-nav-link-ref">Add Page</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-menu"></i>
+                    <span> Menu </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/menu" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/menu/add" routerLinkActive="active" class="side-nav-link-ref">Add Menu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-clipboard"></i>
+                    <span> Categories </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/categories" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/categories/add" routerLinkActive="active" class="side-nav-link-ref">Add Category</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-tag"></i>
+                    <span> Tags </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/tags" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/tags/add" routerLinkActive="active" class="side-nav-link-ref">Add Tag</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-image"></i>
+                    <span> Media </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/media" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/media/add" routerLinkActive="active" class="side-nav-link-ref">Add Media</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-edit"></i>
+                    <span> Forms </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/forms" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/forms/add" routerLinkActive="active" class="side-nav-link-ref">Add Form</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-code"></i>
+                    <span> PHP Code </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/php-code" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/php-code/add" routerLinkActive="active" class="side-nav-link-ref">Add PHP Code</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-corner-down-right"></i>
+                    <span> Redirection </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/redirection" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/redirection/add" routerLinkActive="active" class="side-nav-link-ref">Add Redirection</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-corner-down-right"></i>
+                    <span> Users </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/users" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/users/add" routerLinkActive="active" class="side-nav-link-ref">Add User</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-corner-down-right"></i>
+                    <span> Company </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/company" routerLinkActive="active" class="side-nav-link-ref">List</a>
+                    </li>
+                    <li>
+                        <a routerLink="/company/add" routerLinkActive="active" class="side-nav-link-ref">Add Company</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-title mt-2">Settings</li>
+
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-settings"></i>
+                    <span> Settings </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/settings/general-setting" routerLinkActive="active" class="side-nav-link-ref">General Setting</a>
+                    </li>
+                    <li>
+                        <a routerLink="/settings/social-media-setting" routerLinkActive="active" class="side-nav-link-ref">Social Media Setting</a>
+                    </li>
+                    <li>
+                        <a routerLink="/settings/reading-setting" routerLinkActive="active" class="side-nav-link-ref">Reading Setting</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu-title mt-2">SEO</li>
+            <li>
+                <a href="javascript: void(0);" class="waves-effect">
+                    <i class="fe-search"></i>
+                    <span> SEO </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level collapse" aria-expanded="false">
+                    <li>
+                        <a routerLink="/seo/titles" routerLinkActive="active" class="side-nav-link-ref">Titles & Metas</a>
+                    </li>
+                    <li>
+                        <a routerLink="/seo/sitemap" routerLinkActive="active" class="side-nav-link-ref">XML/HTML Sitemap</a>
+                    </li>
+                    <li>
+                        <a routerLink="/seo/socialnetworks" routerLinkActive="active" class="side-nav-link-ref">Social Networks</a>
+                    </li>
+                    <li>
+                        <a routerLink="/seo/advanced" routerLinkActive="active" class="side-nav-link-ref">Advanced</a>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);" class="waves-effect">
+                            <span> Links </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-third-level collapse" aria-expanded="false">
+                            <li>
+                                <a routerLink="/seo/links" routerLinkActive="active" class="side-nav-link-ref">Links</a>
+                            </li>
+                            <li>
+                                <a routerLink="/seo/links/add" routerLinkActive="active" class="side-nav-link-ref">Add Link</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);" class="waves-effect">
+                            <span> Link Types </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-third-level collapse" aria-expanded="false">
+                            <li>
+                                <a routerLink="/seo/link-types" routerLinkActive="active" class="side-nav-link-ref">Link Types</a>
+                            </li>
+                            <li>
+                                <a routerLink="/seo/link-types/add" routerLinkActive="active" class="side-nav-link-ref">Add Link Type</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);" class="waves-effect">
+                            <span> Schemas </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-third-level collapse" aria-expanded="false">
+                            <li>
+                                <a routerLink="/seo/schemas" routerLinkActive="active" class="side-nav-link-ref">Schemas</a>
+                            </li>
+                            <li>
+                                <a routerLink="/seo/schemas/add" routerLinkActive="active" class="side-nav-link-ref">Add Schema</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <!-- End Sidebar -->
+
+    <div class="clearfix"></div>
+</ng-template>
+
+
+<div class="left-side-menu">
+    <div class="slimscroll-menu" appSlimScroll *ngIf="!isCondensed">
+        <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+    </div>
+
+    <div class="slimscroll-menu" *ngIf="isCondensed">
+        <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+    </div>
+</div>
+<!-- Left Sidebar End -->

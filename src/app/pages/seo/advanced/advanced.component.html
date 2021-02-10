@@ -1,0 +1,87 @@
+  <!-- Start Content-->
+  <div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title-box">
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="javascript: void(0);">YashaaGlobal</a></li>
+              <li class="breadcrumb-item"><a href="javascript: void(0);">SEO</a></li>
+              <li class="breadcrumb-item active">Advanced</li>
+            </ol>
+          </div>
+          <h4 class="page-title">Advanced</h4>
+        </div>
+      </div>
+    </div>
+    <!-- end page title -->
+
+    <!-- Start Add User -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card-box">
+                  <ngb-tabset class="nav-bordered" type="tabs" justify="justified">
+                    <ngb-tab title="Dublin Core" class="nav-item d-none d-sm-inline-block">
+                      <ng-template ngbTabContent>
+                        <ng-template [ngTemplateOutlet]="dublin"></ng-template>
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab title="Structured Data" class="nav-item">
+                      <ng-template ngbTabContent>
+                        <ng-template [ngTemplateOutlet]="structured"></ng-template>
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab title="Robots.txt" class="nav-item">
+                      <ng-template ngbTabContent>
+                        <ng-template [ngTemplateOutlet]="robot"></ng-template>
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab title=".Htaccess" class="nav-item">
+                        <ng-template ngbTabContent>
+                          <ng-template [ngTemplateOutlet]="htaccess"></ng-template>
+                        </ng-template>
+                      </ngb-tab>
+                  </ngb-tabset>
+                  <ng-template #dublin>
+                    <form>
+                        <h4 class="header-title">Dublin core</h4>
+                        <p class="sub-header"> Dublin Core is a set of meta tags to describe your content.These tags are automatically generated. Recognized by states / governements, they are used by directories, Bing, Baidu and Yandex.</p>
+                        <ui-switch defaultBoColor="#dfdfdf" size="small" color="#00b19d" checked></ui-switch>
+                      <div class="text-right">
+                        <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+                      </div>
+                    </form>
+                  </ng-template>
+                  <ng-template #structured>
+                    
+                  </ng-template>
+                  <ng-template #robot>
+                    <h4 class="header-title">Manage Robot File</h4>
+                        <div class="form-group mb-3">
+                            <label for="robots">Robot.txt</label>
+                            <textarea name="robot" id="robots" rows="15" class="form-control"></textarea>
+                        </div>
+                </ng-template>
+                  <ng-template #htaccess>
+                    <h4 class="header-title">Manage your Htaccss</h4>
+                        <div class="form-group mb-3">
+                            <label for="ht-access">.htaccess</label>
+                            <textarea name="ht-access" id="ht-access" rows="15" class="form-control"></textarea>
+                        </div>
+                  </ng-template>
+                </div>
+              </div><!-- End justified bordered tabs -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- container -->

@@ -1,0 +1,144 @@
+//
+// datatable.scss
+//
+
+.datatables {
+  thead {
+    tr {
+      th {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 7px;
+          font: normal normal normal 24px/1 "Material Design Icons";
+          opacity: 0.3;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 14px;
+          opacity: 0.3;
+          font: normal normal normal 24px/1 "Material Design Icons";
+        }
+      }
+
+      .asc {
+        &:before {
+          opacity: 1;
+        }
+      }
+
+      .desc {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+.dataTables_length{
+  display: inline-flex;
+}
+
+.dataTables_length select{
+  display: inline-block;
+    width: auto;
+    padding: .45rem 1.9rem .45rem .9rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    vertical-align: middle;
+    background: #fff url(../../../images/app/sort.svg)no-repeat right .9rem center/8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: calc(1.5em + .56rem + 2px);
+    padding-top: .28rem;
+    padding-bottom: .28rem;
+    padding-left: .8rem;
+    font-size: .7875rem;
+}
+
+
+
+
+// Search Box
+
+.dataTables_filter{
+  display: inline-flex;
+  float: right;
+}
+
+.dataTables_filter input[type="search"]{
+  margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+    height: calc(1.5em + .56rem + 2px);
+    padding: .28rem .8rem;
+    font-size: .7875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #6c757d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.dataTables_filter input[type="search"]:focus{
+  box-shadow: none!important;
+  color: #6c757d;
+    background-color: #fff;
+    border-color: #b1bbc4;
+    outline: 0;
+}
+
+.dataTables_filter label{
+  margin-bottom: 20px;
+}
+
+
+// Sorting
+
+.sorting, .sorting_asc, .sorting_desc{
+  position: relative;
+}
+
+.sorting:focus, .sorting_asc:focus, .sorting_desc:focus{
+  position: relative;
+  outline: none;
+}
+
+.sorting:before, .sorting_asc:before, .sorting_desc:before{
+  content: "\F360";
+  position: absolute;
+  right: 0;
+  top: 7px;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  opacity: 0.3;
+}
+
+.sorting:after,.sorting_asc:after, .sorting_desc:after{
+  content: "\F35D";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  opacity: 0.3;
+}
+
+.sorting:before,.sorting_asc:before{
+  opacity: 1;
+}
+
+.sorting_desc:after{
+  opacity: 1;
+}

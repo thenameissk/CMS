@@ -1,0 +1,98 @@
+  <!-- Start Content-->
+  <div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+      <div class="col-12">
+        <div class="page-title-box">
+          <div class="page-title-right">
+            <ol class="breadcrumb m-0">
+              <li class="breadcrumb-item"><a href="javascript: void(0);">YashaaGlobal</a></li>
+              <li class="breadcrumb-item"><a href="javascript: void(0);">CMS</a></li>
+              <li class="breadcrumb-item active">Add Form</li>
+            </ol>
+          </div>
+          <h4 class="page-title">Add Form</h4>
+        </div>
+      </div>
+    </div>
+    <!-- end page title -->
+
+    <!-- Start Add User -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <ngb-tabset justify="justified" type="pills">
+                  <ngb-tab title="Form Details" class="nav-item">
+                    <ng-template ngbTabContent class="nav-item">
+                      <ng-template [ngTemplateOutlet]="formadd"></ng-template>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Email" class="nav-item">
+                    <ng-template ngbTabContent>
+                      <ng-template [ngTemplateOutlet]="email"></ng-template>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>
+              </div>
+            </div>
+            <ng-template #formadd>
+              <h4 class="header-title mb-3 mt-3">Create form</h4>
+              <form action="">
+                <div class="form-group mb-3">
+                    <label for="name">Form Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="">
+                  </div>
+    
+                  <!-- CKE Editor -->
+    
+                  <div class="form-group has-feedback"
+                    [ngClass]="{ 'has-error': myckeditor.invalid && myckeditor.touched }">
+                    <ckeditor [(ngModel)]="mycontent" #myckeditor="ngModel" name="myckeditor" required [config]="ckeConfig"
+                      debounce="500" (paste)="onPaste($event)" (change)="onChange($event)">
+                    </ckeditor>
+                  </div>
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+                  </div>
+              </form>
+
+            </ng-template>
+            <ng-template #email>
+              <h4 class="header-title mb-3 mt-3">Email Settings</h4>
+              <form action="">
+                <div class="form-group mb-3">
+                    <label for="reciever">Sender</label>
+                    <input type="text" class="form-control" id="reciever" placeholder="">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="sender">Receiver</label>
+                    <input type="text" class="form-control" id="sender" placeholder="">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="add-head">Additional Headers</label>
+                    <input type="text" class="form-control" id="add-head" placeholder="">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5"></textarea>
+                  </div>
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+                  </div>
+              </form>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div> <!-- container -->

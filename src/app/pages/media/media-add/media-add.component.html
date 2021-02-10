@@ -1,0 +1,64 @@
+        <!-- Start Content-->
+        <div class="container-fluid">
+            
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box">
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">YashaaGlobal</a></li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">CMS</a></li>
+                                <li class="breadcrumb-item active">Add Media</li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Add Media</h4>
+                    </div>
+                </div>
+            </div>     
+            <!-- end page title --> 
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <h5 class="text-uppercase bg-light p-2 m-3">Image</h5>
+                        <div class="card-body">
+                            <!-- file upload -->
+                            <!-- <file-upload class="dropzone"></file-upload> -->
+                            <div class="custom-dropzone bg-light" style="height: 310px;" ngx-dropzone [accept]="'image/*'" (change)="onSelect($event)">
+                                <ngx-dropzone-label>
+                                    <div>
+                                        <h2>Select your Image</h2>
+                                    </div>
+                                </ngx-dropzone-label>
+                                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+                                    <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                                </ngx-dropzone-image-preview>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <h5 class="text-uppercase bg-light p-2 m-3">Image Options</h5>
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label for="alt-text">Alternative Text</label>
+                                <input type="text" class="form-control" id="name" placeholder="">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="caption">Caption</label>
+                                <input type="text" class="form-control" id="name" placeholder="">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="description">Description</label>
+                                <input type="text" class="form-control" id="name" placeholder="">
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
